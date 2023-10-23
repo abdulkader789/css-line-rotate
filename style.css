@@ -1,5 +1,6 @@
 section {
     width: 600px;
+    margin:0 auto;
   }
 
   .container {
@@ -23,21 +24,21 @@ section {
 
   .even .icon:after {
     content: '';
-    width: 63%;
+    width: 59.8%;
     border-bottom: solid 3px black;
     position: absolute;
-    top: 150px;
-    left: 125px;
+    top: 205px;
+    left: 115px;
     transform: rotate(30deg);
   }
 
   .odd:not(:last-child) .icon:after {
     content: '';
-    width: 63%;
+    width: 59.5%;
     border-bottom: solid 3px black;
     position: absolute;
-    top: 150px;
-    right: 125px;
+    top: 200px;
+    left: 125px;
     transform: rotate(-30deg);
   }
 
