@@ -1,0 +1,47 @@
+section {
+    width: 600px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 230px
+  }
+
+  .container:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .icon {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 50%;
+  }
+
+
+  .even .icon:after {
+    content: '';
+    width: 63%;
+    border-bottom: solid 3px black;
+    position: absolute;
+    top: 150px;
+    left: 125px;
+    transform: rotate(30deg);
+  }
+
+  .odd:not(:last-child) .icon:after {
+    content: '';
+    width: 63%;
+    border-bottom: solid 3px black;
+    position: absolute;
+    top: 150px;
+    right: 125px;
+    transform: rotate(-30deg);
+  }
+
+  .text {
+    width: 240px;
+    height: 150px;
+  }

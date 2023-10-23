@@ -6,55 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Line Rotate</title>
-  <style>
-    section {
-      width: 600px;
-    }
 
-    .container {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      height: 230px
-    }
-
-    .container:nth-child(even) {
-      flex-direction: row-reverse;
-    }
-
-    .icon {
-      width: 150px;
-      height: 150px;
-      border: 1px solid;
-      border-radius: 50%;
-    }
-
-
-    .even .icon:after {
-      content: '';
-      width: 63%;
-      border-bottom: solid 3px black;
-      position: absolute;
-      top: 150px;
-      left: 125px;
-      transform: rotate(30deg);
-    }
-
-    .odd:not(:last-child) .icon:after {
-      content: '';
-      width: 63%;
-      border-bottom: solid 3px black;
-      position: absolute;
-      top: 150px;
-      right: 125px;
-      transform: rotate(-30deg);
-    }
-
-    .text {
-      width: 240px;
-      height: 150px;
-    }
-  </style>
 </head>
 
 <body>
@@ -77,13 +29,15 @@
     </div>
     <div class='container even'>
       <div class='icon'></div>
-      <div class='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+      <div class='text'>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book.</div>
     </div>
     <div class='container odd'>
       <div class='icon'></div>
-      <div class='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+      <div class='text'>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book.</div>
     </div>
